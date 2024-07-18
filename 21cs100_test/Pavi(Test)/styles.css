@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e4e4e4;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}

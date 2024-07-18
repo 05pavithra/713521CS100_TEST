@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .navbar {
+        background-color: #007bff;
+        color: #fff;
+        padding: 1em 0;
+        position: relative;
+        z-index: 1000;
+      }
+
+      .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+      }
+
+      .navbar-brand {
+        font-size: 1.5em;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .navbar-nav {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar-nav li {
+        display: inline;
+      }
+
+      .navbar-nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+      }
+
+      .navbar-nav a.active {
+        background-color: #0056b3;
+      }
+      .login-btn {
+        background-color: #0056b3;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+      }
+      .about-container {
+        background-color: #fff;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 100%;
+        margin: 2em auto;
+      }
+
+      .about-container h1 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 1em;
+      }
+
+      .about-content {
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .section-heading {
+        font-size: 1.3em;
+        color: #007bff;
+        margin-bottom: 0.5em;
+      }
+
+      .team-member {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+      }
+
+      .team-member img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 1em;
+      }
+
+      .contact-info {
+        margin-top: 2em;
+      }
+
+      .contact-info p {
+        margin: 0.5em 0;
+      }
+      @media (max-width: 768px) {
+        .navbar .container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .navbar-nav {
+          margin-top: 1em;
+        }
+
+        .navbar-brand {
+          margin-bottom: 1em;
+        }
+
+        .navbar-nav a {
+          display: block;
+          padding: 0.5em 0;
+        }
+
+        .about-container {
+          padding: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">E-Shop</a>
+        <ul class="navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="order-history.html">Order History</a></li>
+        </ul>
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
+    </nav>
+    <div class="about-container">
+      <h1>About Us</h1>
+      <section>
+        <h2 class="section-heading">Mission & Vision</h2>
+        <div class="about-content">
+          <p>
+            Our mission is to provide high-quality products and excellent
+            service to our customers. We aim to become a trusted name in
+            ecommerce, known for reliability and customer satisfaction.
+          </p>
+          <p>
+            Our vision is to innovate and expand, offering a wide range of
+            products that cater to diverse customer needs while maintaining
+            sustainability and ethical business practices.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-heading">History</h2>
+        <div class="about-content">
+          <p>
+            Founded in 2015, E-Shop started as a small venture with a passion
+            for ecommerce. Over the years, we have grown into a reputable online
+            store, serving thousands of customers worldwide.
+          </p>
+          <p>
+            Our journey is marked by dedication, growth, and a commitment to
+            excellence. We continue to evolve, adapting to market trends and
+            customer preferences.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-heading">Our Team</h2>
+        <div class="team-member">
+          <img src="newimages/profile2.webp" alt="Team Member" />
+          <div>
+            <h3>SIDDHARTH</h3>
+            <p>CEO & Founder</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="newimages/profileg1.avif" alt="Team Member" />
+          <div>
+            <h3>SAMUDRA</h3>
+            <p>Marketing Manager</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-info">
+        <h2 class="section-heading">Contact Us</h2>
+        <div class="about-content">
+          <p>
+            If you have any questions or inquiries, feel free to reach out to
+            us:
+          </p>
+          <p>Email: contact@eshop.com</p>
+          <p>Phone: +91 1234567890</p>
+          <p>Address: abc Street, DCity, ECountry</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

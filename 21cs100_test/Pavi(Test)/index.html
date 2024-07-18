@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Ecommerce Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        background-color: #007bff;
+        color: #fff;
+        padding: 1em 0;
+        position: relative;
+        z-index: 1000;
+      }
+
+      .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+      }
+
+      .navbar-brand {
+        font-size: 1.5em;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .navbar-nav {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar-nav li {
+        display: inline;
+      }
+
+      .navbar-nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+      }
+
+      .navbar-nav a.active {
+        background-color: #0056b3;
+      }
+
+      .login-btn {
+        background-color: #0056b3;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 2em auto;
+        padding: 0 1em;
+      }
+
+      h1 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 1em;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1em;
+      }
+
+      .product-card {
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 1em;
+      }
+
+      .product-card h2 {
+        color: #007bff;
+        margin-bottom: 0.5em;
+      }
+
+      .product-card p {
+        margin-bottom: 1em;
+      }
+
+      .product-card .product-price {
+        font-size: 1.2em;
+        color: #007bff;
+        margin-bottom: 1em;
+      }
+
+      .footer {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .navbar .container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .navbar-nav {
+          margin-top: 1em;
+        }
+
+        .navbar-brand {
+          margin-bottom: 1em;
+        }
+
+        .navbar-nav a {
+          display: block;
+          padding: 0.5em 0;
+        }
+
+        .login-btn {
+          margin-top: 1em;
+        }
+
+        .container {
+          padding: 0.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">E-Shop</a>
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="order-history.html">Order History</a></li>
+        </ul>
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Welcome to E-Shop!</h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="newimages/NEW NAIL.jpg" alt="Product 1" />
+          <h2>NAIL PAINT</h2>
+          <p>
+            BAD COMPANY No Toxin Creme Nail Polish Combo (10Mlx3) | Glossy
+            Finish Long Wear, Quick Dry, Chip Resistant Nail Paint
+          </p>
+          <p class="product-price">₹1,500</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product-card">
+          <img src="newimages/MIX1.jpg" alt="mixer" />
+          <h2>MIXER GRINDER</h2>
+          <p>
+            PHILIPS Mixer Grinder + Food Processor, 3-in-1 750 Watt (Mixer
+            Grinder for home + Juicer + Food Processor) 4 Jar, (HL7707/01)
+          </p>
+          <p class="product-price">₹7,000</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product-card">
+          <img src="newimages/dress.webp" alt="dress" />
+          <h2>CROP SHIRT</h2>
+          <p>
+            Leriya Fashion Oversized Corp Shirt for Women | Crop Shirt for Women
+            Stylish Western | Short Shirt for Women
+          </p>
+          <p class="product-price">₹1,800</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product-card">
+          <img src="newimages/PERFUME.jpg" alt="perfume" />
+          <h2>LIQUID PERFUME</h2>
+          <p>
+            Enchanteur Perfumed Deo Spray for Women with 24-Hours Odour
+            Protection & Long-Lasting Floral French Fragrance| 150ml Each
+          </p>
+          <p class="product-price">₹800</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2015 E-Shop</p>
+        <p>
+          <a href="about.html">About Us</a> |
+          <a href="contact.html">Contact</a> |
+          <a href="profile.html">Profile</a> |
+          <a href="order-history.html">Order History</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
